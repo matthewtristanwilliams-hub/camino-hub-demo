@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Camino PR Hub demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<meta name="robots" content="noindex">
+<style>.demo-banner{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px 20px;background:#fff8e6;border-bottom:1px solid #f0dca8;font-size:13.5px;line-height:1.45}.demo-banner .demo-actions{display:flex;gap:12px;align-items:center;white-space:nowrap}.demo-banner a{color:inherit;text-decoration:underline}@media (prefers-color-scheme: dark){.demo-banner{background:#3a2f12;border-bottom-color:#5c4a1c;color:#f5e9c8}}</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><strong>Camino PR Hub</strong><span class="tag" id="mode-tag" hidden>Local test mode</span></div>
+  <div class="viewer" id="viewer-box"></div>
+</header>
+<div class="demo-banner" role="note"><span><strong>Demo.</strong> This is Camino's PR Hub with made-up people, projects, suppliers and amounts. Nothing here reaches SharePoint or email, and your changes stay in this browser. A good start: Oksana Danylenko, who has a PR waiting for her approval, or Mariia Lysenko for payments and the bank statement. Open Tracking and Weak spots to see where purchases wait. Switch person at the top right.</span><span class="demo-actions"><a href="#" id="demo-outbox">Alerts sent</a><button type="button" class="btn small" id="demo-reset">Start over</button></span></div>
+<div class="layout">
+  <nav class="side" id="nav" aria-label="Sections"></nav>
+  <main id="main"><p class="loading">Loading…</p></main>
+</div>
+<div class="modal-back" id="modal-back" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="demo.js"></script>
+</body>
+</html>
